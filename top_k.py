@@ -9,6 +9,11 @@ def top_k(nums, k):
         answer.append(sorted_list[i][0])
     return answer
 
+nums = [1,1,2,2,2,2,3,3,3]
+k = 2
+
+print(top_k(nums, k))
+
 #model solution 
 def top_k(nums, k):
     count = {}
@@ -23,8 +28,3 @@ def top_k(nums, k):
             ret.extend(n_list)
             if len(ret) == k:
                 return ret
-
-nums = [1,1,2,2,2,2,3,3,3]
-k = 2
-
-print(top_k(nums, k))
